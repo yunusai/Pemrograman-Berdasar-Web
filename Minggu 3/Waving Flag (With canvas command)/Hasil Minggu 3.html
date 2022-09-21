@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<!-- Elemen -->
+    <head>
+		<!-- link to CSS -->
+        <link rel="stylesheet" type="text/css"href="Flag animation.css">
+		<!-- Cek w3schools untuk perintah perintah HTML -->
+    </head>
+    <body>
+	
+        <!-- Atribut -->
+		<h1 align="center">Heading HTML 5</h1>
+		<h2 align="center">Sub Title</h2>
+		<h6 align="center">SAMPAI H6</h6> <!-- Heading cuma bisa sampai 6 -->
+		<p align="center"> Hi, ini adalah percobaan pertama saya di HTML 5</p>
+		<p align="center"> Harus di simpan dulu baru bisa di run(eksekusi) (seperti build di codeblocks)</p>
+		<p align="center"> align="center" adalah perintah untuk menengahkan paragraf</p> <!--Ini Komentar --> 
+		<!-- macam macam perintah input -->
+		<input type="text"> <!-- perintah type="text" untuk bisa input sendiri teks yang diinginkan tapi terbatas (box nya kecil) -->
+		<input type="radio"> <!-- Ini adalah perintah seperti checkbox tapi radio -->
+		<input type="checkbox"> <!-- ini adalah perintah untuk menampilkan check box -->
+		<center><img src="file:///C:/Users/Public/Pictures/Sample%20Pictures/Lighthouse.jpg" width="70%"></center> <!-- perintah untuk menampilkan gambar -->
+		<!-- width"x%" adalah perintah untuk mengatur besar kecil tampilan --> 
+		<!-- <center></center> adalah perintah untuk menengahkan segala yang ada di dalam perintah -->
+		
+		<!-- Pembuatan Tabel di HTML dan beberapa perintah fungsi yang dapat digunakan -->
+		
+		<h4 align="center">Praktik Tabel di HTML 5</h4>
+		
+		<center><table border="1" width="100%"> <!-- ini adalah perintah untuk membuat tabel pada tampilan -->
+			<tr>
+				<td colspan="2">1 2 3</td> <!-- colspan (column span) adalah perintah untuk mnyatukan kolom, nomor yang dimasukkan adalah jumlah kolom yang digabungkan -->
+				<td rowspan="3">6 9</td	> <!-- rowspan adalah perintah untuk mnyatukan baris, nomor yang dimasukkan adalah jumlah kolom yang digabungkan -->
+			</tr>
+				
+			<tr>
+				<td>4</td>
+				<td>5</td>
+			</tr>
+			
+			<tr>
+				<td>7</td>
+				<td>8</td>
+			</tr>
+		</table></center>
+		
+		<!-- Multimedia HTML -->
+		
+		<video controls>
+			<source type="video/wmv" src="file:///Z:/htdocs/Pemrograman%20Berbasis%20Web/Minggu%203/Wildlife.wmv"> <!-- wmv tidak di support di HTML -->
+		</video>
+		
+		<video controls width="1000" height="700"> <!-- perintah id digunakan untuk menamai elemen -->
+			<source type="video/mp4" src="file:///Z:/htdocs/Pemrograman%20Berbasis%20Web/Minggu%203/mov_bbb.mp4"> <!-- mp4 di support HTML -->
+		</video>
+		
+		<!-- Cara menggunakan methods yang telah dideklarasi -->
+		
+		<p>
+			<button onclick="playVid()" type="button">Play Video</button>
+			<button onclick="pauseVid()" type="button">Pause Video</button>
+			<button onclick="durationVid()" type="button">Video Duration</button>
+		</p>
+		
+		<video width="1000" height="700" id="myVideo"> <!-- perintah id digunakan untuk menamai elemen -->
+			<source type="video/mp4" src="file:///Z:/htdocs/Pemrograman%20Berbasis%20Web/Minggu%203/mov_bbb.mp4"> <!-- mp4 di support HTML -->
+		</video>
+	
+	<!-- Plug ins -->
+	
+	<object>
+	</object>
+	
+	<!-- HTML Youtube videos -->
+	
+	<p>Queen Elizabeth Funeral</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/lNl4A7yNK0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	<p> Vietnam Vs Indonesia </p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/SsSzjddeFio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<!-- Penampilan Video bisa tidak diijinkan oleh channel pemilik video tersebut, jika tidak diijinkan maka tidak bisa ditampilkan -->
+	<!-- Sama kasusnya dengan video yang telah diblokir oleh youtube itu sendiri -->
+	<p> MOTOGP Latest News </p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/HMdTjISpMic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	<!-- Pembuatan canvas untuk MEMBUAT gambar -->
+    <canvas id="flag" width="700" height="600" style="margin-left: -160px; margin-top: -124px;"></canvas>
+    </body>
+	
+	<!-- Link to Javascript -->
+    <script src="Flag Animation(javascript).js"></script> 
+	
+	<!-- Methods Javascript -->
+	
+	<!-- Masih error ketika dicoba di kelas, butuh di perdalami lagi -->
+	
+	<script>
+		var vid = document.getElementById("myVideo");
+		
+		function bufferVid(){
+			vid.buffered() = true;
+		}
+		
+		function playVid() {
+			vid.play();
+			vid.loop = true;
+		|
+		
+		function pauseVid() {
+			vid.pause();
+		|
+		
+		function durationVid() {
+			alert(vid.duration);
+		|
+	</script>
+	
+</html>

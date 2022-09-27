@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<title> Minggu 4 </title>
+		</head>
+		
+		<body>
+			<h1  align="center"> Form Komunitas Komputer Semarang </h1>
+			Waktu
+			<input type="datetime"><br> <!-- Seharusnya dapat menampilkan jam dan tanggal tetapi entah kenapa tidak bekerja, harus dipelajari lebih lanjut -->
+			
+			<form name="form1" method="post" action="Minggu 4.php"> <!-- "name atau id =" untuk menamai variabel, "method="post"" untuk mengirim data secara langsung atau dismpan dalam database, "action=" untuk menunjuk file data dari form ini dikirimkan kemana  -->
+			<!-- Perhatikan arsitektur web, dengan bentuk seperti ini kita harus menggunakan localhost atau http jika alamat nya masih seperti lokasi file maka tidak bisa bekerja dengan baik -->
+			<!-- "method="get"" untuk mengirim data melalui url sehingga kita dapat melihat data dengan jelas di url setelah kami kirim/kirim -->
+			<!-- HTML tidak sensitive terhadap "space" jadi kalau mau merapikan lewat perintah -->
+			<!-- deklarasi "name" diperlukan agar array bisa membaca data pada variabel tersebut -->
+			<table>
+			<tr>
+				<td>Nama:<input type="text" name="fname"><br></td> <!-- "<br>" digunakan untuk spasi seperti endl di c/c++ -->
+				<td>NIM:<input type="text" name="fnim"><br></td>
+				<td>Kelompok:<input type="number" name="fkel"><br></td>
+			</tr>
+			<tr>
+				<td>Mata Kuliah:<input type="text" name="fmatkul"><br></td>
+				<td>
+				Program Studi:
+				<select name="fprodi"> <!-- pendeklarasian nama untuk perintah seperti ini harus dipelajari lagi -->
+				<option>             </option>
+				<option>S1 Teknik Informatika</option>
+				<option>D3 Teknik Informatika</option>
+				<option>S1 Sistem Informasi</option>
+				</select><br>
+				</td>
+				<td>Fakultas:<input type="text" name="ffak"><br></td>
+				<td>Universitas:<input type="text" name="funi"><br></td>
+			</tr>
+			<tr>
+				<td>Tanggal Lahir:<input type="date" name="ftang"><br></td>
+				<td name="fdaf">Apakah sudah daftar 1000 seminar?:<br>
+					Sudah<input type="radio"><br>
+					Belum<input type="radio"><br>
+				</td>
+				<td name="fpek">Pilih Pekerjaan:<br>
+				Mahasiswa<input type="checkbox" ><br>
+				Pegawai<input type="checkbox"><br>
+				Pedagang<input type="checkbox"><br></td>
+			</tr>
+			<tr>
+			<td>Minat:
+				<select>
+				<option>             </option>
+				<option>Rekayasa Perangkat Lunak</option>
+				<option>Kecerdasan Buatan</option>
+				<option>Pemrograman Web</option>
+				</select><br>
+			</td
+			<tr>
+				<td>
+				Lampiran<br>
+				<input type="file" name="flampir" required><br> <!-- untuk input upload file -->
+				</td>
+			</tr>
+			<tr>
+				<td><input type="button"><br></td> <!-- Ini tidak tahu kenapa tidak bisa dinamai, butuh di pelajari lebih lanjut -->
+				<!-- menampilkan button lewat input masih misteri kegunaannya apa, butuh dipelajari lebih lanjut -->
+				<td><button>Ini Button</button></td><!-- Ini bisa dinamai --> <!-- Dengan perintah ini bisa dijadikan tombol submit(tombol submit manual -->
+				<td><input type="submit"></td>
+			</tr>
+			</table>
+			</form>
+		</body>
+	</html>

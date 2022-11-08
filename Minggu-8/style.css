@@ -1,0 +1,50 @@
+*{/* Selektor Universal (untuk semua satu halaman website kena semua */
+    box-sizing: border-box;
+    background-color: black;
+}
+
+header{ /* Selektor Tag yang kena hanya line yang memiliki tag yang di masukan */
+    padding:10%;/* Jarak antara border dengan konten */
+    color:blue;
+    border: 10px solid green;
+    text-align: center;
+    background-color: aquamarine
+}
+
+#nav{/* Selektor id yang kena hanya yang memilki id tersebut, penggunaan untuk sebuah styling yg diperlukan sekali dalam 1 halaman website */
+    margin:0;/* Jarak antara border dengan item lain */
+    padding: 30px;
+    color:blue;
+    border: 10px solid green;
+    text-align: center;
+    background-color: aquamarine;
+    float: left;/* Memindahkan? (DAri ekxperimen dilakukan pada html, dapat dilihat bahwa style ini membuat selektor pindah ke arah yang diinginkan) */
+}
+
+nav ul li a{
+    color: red!important;
+}
+
+nav ul li a:hover{
+    color: black;
+    background-color: bisque;
+}
+
+nav ul li a:active{
+    color: blueviolet;
+    background-color: black;
+}
+
+article{
+    color: aqua;
+    float: top;
+}
+
+footer{
+    text-align: center;
+    color: blue;
+}
+
+.class1{/*Selektor Class yang kena hanya tag yang memilki class tersebut*/
+    background-color: brown;
+}

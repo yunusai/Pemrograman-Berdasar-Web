@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="muhammad yunus saifullah, Muhammad, Yunus, Saifullah">
+    <meta name="Cascade Style Sheet" content="style, styling, tes, test, css, cascade, sheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Basic Javascript</title>
+
+    <style>
+        .row:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col"] {
+            float: left;
+            padding: 10px;
+            border: 1px solid green;
+        }
+
+        .col1 {
+            width: 1%;
+        }
+
+        .col2 {
+            width: 15%;
+        }
+
+        .col3 {
+            width: 25%;
+        }
+
+        .col4 {
+            width: 35%;
+        }
+
+        .col5 {
+            width: 50%;
+        }
+
+        .col6 {
+            width: 55%;
+        }
+
+        .col7 {
+            width: 60%;
+        }
+
+        .col8 {
+            width: 70%;
+        }
+
+        .col9 {
+            width: 75%;
+        }
+
+        .col10 {
+            width: 80%;
+        }
+
+        .col11 {
+            width: 90%;
+        }
+
+        .col12 {
+            width: 100%;
+        }
+
+        .col13 {
+            width: 125%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tes css</h1>
+    </header>
+
+    <main class="row">
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="#" class="col12">Menu 1</a>
+                </li>
+                <li>
+                    <a href="#">Menu 2</a>
+                </li>
+                <li>
+                    <a href="#">Menu 3</a>
+                </li>
+            </ul>
+        </nav>
+
+        <article>
+            <h3>Tes CSS 2</h3>
+            <p class="class1">Lorem, ipsum dolor.</p>
+            <p class="col12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cum non eum! Et consequatur ab vero! Facilis itaque
+                dignissimos ipsam, quos nostrum numquam velit, et dolor, odio fugiat quam voluptatum.lore Lorem ipsum dolor
+                sit, amet consectetur adipisicing elit. Cumque non quis praesentium consectetur atque unde ut, accusamus
+                incidunt aliquam et assumenda enim asperiores maiores culpa error porro? Eligendi, facilis quidem. Deserunt
+                aut at dolorem impedit possimus ratione obcaecati nihil! Reiciendis deleniti voluptates accusamus sint corrupti
+                laudantium quod amet, molestias est veniam! Veritatis ullam, accusantium placeat dolor commodi hic officia
+                saepe? Voluptatum, at excepturi, est odit consequuntur voluptas expedita et earum aliquam laudantium corrupti.
+                Officia a tempore dolor enim amet, rem exercitationem animi hic esse aut aperiam similique dolorem tenetur
+                repellendus?
+            </p>
+            <h3>Tes Javascript Basic</h3>
+            <script>
+                console.log("Hello World (console.log)") //Tidak muncul di web
+                document.write("Hello World (document.write)") //Muncul di web
+            </script>
+            <p id="fake">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea magnam provident voluptate reiciendis veritatis aliquid perferendis
+                sunt nam. Illum fugit sunt natus, nihil cum adipisci magnam. Consequuntur est amet repellendus?
+            </p>
+            <p id="hasil-output">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestiae perferendis dolores saepe. Aspernatur
+                exercitationem accusamus ratione possimus earum reiciendis, voluptates necessitatibus laboriosam corporis
+                delectus inventore non sint distinctio vel.
+            </p>
+        </article>
+
+        <section>
+            <h3>Membuat sudut melengkung dengan css3</h3>
+            <div class="ketengah">
+                <div class="kotak kotak1">kotak 1</div>
+                <div class="kotak kotak2">kotak 2</div>
+                <div class="kotak kotak3">kotak 3</div>
+                <div class="kotak kotak4">kotak 4</div>
+                <div class="kotak kotak5">kotak 5</div>
+                <div class="kotak kotak6">kotak 6</div>
+                <div class="kotak kotak7">kotak 7</div>
+                <div class="kotak kotak8">kotak 8</div>
+            </div>
+
+            <div class="grid-container">
+                <div class="nav-item">1</div>
+                <div class="nav-item">2</div>
+                <div class="nav-item">3</div>
+                <div class="nav-item">4</div>
+                <div class="nav-item">5</div>
+                <div class="nav-item">6</div>
+                <div class="nav-item">7</div>
+                <div class="nav-item">8</div>
+                <div class="nav-item">9</div>
+            </div>
+
+        </section>
+    </main>
+    
+    <footer>Copyright</footer>
+    
+    <script>
+        //Hanya bisa aktif ketika ditempatkan diposisi paling bawah di tag <body>
+            var hasil = document.getElementById("hasil-output")//Menampilkan output kedalam hasil
+            hasil.innerHTML = ("<p>AkuSukaJS<p>")
+    </script>
+</body>
+
+</html>

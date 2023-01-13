@@ -1,0 +1,43 @@
+.btn:hover{
+    background-color: aqua;
+    color: black;
+}
+
+main{
+    float: right;
+    text-align: center;
+}
+
+.dropdown-menu {
+    min-width:100px;
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+.flex-column{
+    position: fixed;
+}
+
+.title{
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+audio{
+    margin-top: 150px;
+    margin-bottom: 300px;
+    width: 1000px;
+}
+
+.awalan{
+    margin-top: 200px;
+}
+
+article{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
